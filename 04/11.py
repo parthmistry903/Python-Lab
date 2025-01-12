@@ -1,0 +1,2 @@
+"""Exercise: 11"""
+import math; x = math.radians(30); terms = 10; sin_val = 0; sign = 1; for i in range(terms): term = sign * (x ** (2 * i + 1)) / math.factorial(2 * i + 1); sin_val += term; sign *= -1; print(sin_val)
