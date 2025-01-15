@@ -1,5 +1,4 @@
-# Problem 2: Write your own functions (without using built-in functions) to convert all characters of a string into lower case/upper case/toggle case.
-
+#Write your own functions (without using built-in functions) to convert all characters of a string into lower case/upper case/toggle case.
 def to_lower_case(input_string):
     result = ''
     for char in input_string:

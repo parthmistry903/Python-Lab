@@ -1,5 +1,5 @@
 # Accept marks of three subjects. Print total and average along with whether a candidate has passed or fail.
-def calculate_grades_and_result(marks):
+def final_result(marks):
     total = sum(marks)
     average = total / len(marks)
     result = "Fail" if any(mark < 40 for mark in marks) else "Pass"
@@ -32,5 +32,5 @@ for i in range(3):
     mark = input(f"Enter marks for subject {i+1} (or type 'Absent'): ")
     marks.append(int(mark) if mark.isdigit() else "Absent")
 
-total, average, result, grades = calculate_grades_and_result(marks)
+total, average, result, grades = final_result(marks)
 print(f"Total: {total}, Average: {average:.2f}, Result: {result}, Grades: {grades}")

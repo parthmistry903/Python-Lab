@@ -1,5 +1,4 @@
-# Problem 1: Count how many vowels are there in a string. Accept the string from the user.
-
+#Count how many vowels are there in a string. Accept the string from the user.
 def count_vowels(input_string):
     vowels = 'aeiouAEIOU'
     count = 0

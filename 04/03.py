@@ -1,2 +1,6 @@
-"""Exercise: 03"""
-string = 'Hello123'; alphabets = sum(c.isalpha() for c in string); digits = sum(c.isdigit() for c in string); print(f'Alphabets: {alphabets}, Digits: {digits}')
+#Count no. of alphabets and no. of digits in any given string.
+text = input("Enter a string: ")
+alphabets = sum(c.isalpha() for c in text)
+digits = sum(c.isdigit() for c in text)
+print("Alphabets:", alphabets)
+print("Digits:", digits)

@@ -1,2 +1,10 @@
-"""Exercise: 06"""
-for h in range(24): suffix = 'AM' if h < 12 else 'PM'; if h == 0: print('12 Midnight'); elif h == 12: print('12 Noon'); else: print(f'{h % 12} {suffix}')
+# 6. Print 24 hours of the day with suitable suffixes like AM, PM, Noon and Midnight.
+for hour in range(24):
+    if hour == 0:
+        print("12 Midnight")
+    elif hour == 12:
+        print("12 Noon")
+    elif hour < 12:
+        print(f"{hour} AM")
+    else:
+        print(f"{hour - 12} PM")

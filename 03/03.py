@@ -1,5 +1,4 @@
-# Problem 3: Accept two strings. Check whether one string is there in another string.
-
+#Accept two strings. Check whether one string is there in another string.
 def is_substring(string1, string2):
     return string2 in string1
 

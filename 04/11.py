@@ -1,2 +1,8 @@
-"""Exercise: 11"""
-import math; x = math.radians(30); terms = 10; sin_val = 0; sign = 1; for i in range(terms): term = sign * (x ** (2 * i + 1)) / math.factorial(2 * i + 1); sin_val += term; sign *= -1; print(sin_val)
+# 11. Calculate sin(x); x is a radian value.
+from math import factorial, pi
+x = float(input("Enter x in degrees: ")) * pi / 180
+sin_x = 0
+for n in range(10):
+    term = (-1)**n * (x**(2*n + 1)) / factorial(2*n + 1)
+    sin_x += term
+print(f"sin({x}) = {sin_x}")

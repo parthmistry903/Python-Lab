@@ -1,2 +1,17 @@
-"""Exercise: 07"""
-import math; n = 5; r = 2; print(math.factorial(n) // (math.factorial(r) * math.factorial(n - r)))
+# 7. Print nCr and nPr.
+from math import factorial
+n = int(input("Enter n: "))
+r = int(input("Enter r: "))
+nCr = factorial(n) // (factorial(r) * factorial(n - r))
+nPr = factorial(n) // factorial(n - r)
+print(f"nCr = {nCr}")
+print(f"nPr = {nPr}")
+
+# OR
+# import math
+# n = int(input("Enter n: "))
+# r = int(input("Enter r: "))
+# nCr = math.comb(n, r)  # Combination: nCr = n! / (r! * (n-r)!)
+# nPr = math.perm(n, r)  # Permutation: nPr = n! / (n-r)!
+# print(f"nCr: {nCr}")
+# print(f"nPr: {nPr}")

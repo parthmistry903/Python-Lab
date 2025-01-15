@@ -1,2 +1,4 @@
-"""Exercise: 08"""
-num = 5; result = 1; for i in range(1, num + 1): result *= i; print(result)
+# 8. Print factorial of a given number.
+from math import factorial
+num = int(input("Enter a number: "))
+print(f"Factorial of {num} is {factorial(num)}")

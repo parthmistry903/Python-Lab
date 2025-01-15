@@ -1,2 +1,4 @@
-"""Exercise: 09"""
-N = 10; for i in range(N, 0, -1): print(i)
+# 9. Print N natural numbers in reverse.
+N = int(input("Enter N: "))
+for i in range(N, 0, -1):
+    print(i, end=" ")
