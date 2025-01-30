@@ -1,12 +1,14 @@
 # 7. Print nCr and nPr.
-from math import factorial
-n = int(input("Enter n: "))
-r = int(input("Enter r: "))
-nCr = factorial(n) // (factorial(r) * factorial(n - r))
-nPr = factorial(n) // factorial(n - r)
-print(f"nCr = {nCr}")
-print(f"nPr = {nPr}")
+def ncpr():
+    from math import factorial
+    n = int(input("Enter n: "))
+    r = int(input("Enter r: "))
+    nCr = factorial(n) // (factorial(r) * factorial(n - r))
+    nPr = factorial(n) // factorial(n - r)
+    print(f"nCr = {nCr}")
+    print(f"nPr = {nPr}")
 
+ncpr()
 # OR
 # import math
 # n = int(input("Enter n: "))
