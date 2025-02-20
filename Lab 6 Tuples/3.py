@@ -24,6 +24,17 @@ def final(dt1, dt2):
             y1 += 1
     return c
 
-dt1 = (2, 4, 2007)
-dt2 = (20, 2, 2025)
-print(final(dt1, dt2))
+dt1 = input("Enter first date : ").split("/")
+dt2 = input("Enter first date : ").split("/")
+
+for i in range(3):
+    dt1[i] = int(dt1[i])
+    dt2[i] = int(dt2[i])
+
+dt1 = tuple(dt1)
+dt2 = tuple(dt2)
+
+if dt1[2] <= dt2[2]:
+    print(final(dt1, dt2))
+else:
+    print(final(dt2, dt1))
