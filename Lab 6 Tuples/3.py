@@ -1,24 +1,29 @@
 # Suppose a date is represented as a tuple (d, m, y). Create two date tuples and find
 # the number of days between the two dates.
 def isLeap(y):
-    return y % 4 == 0 and (y % 100 != 0 or y % 400 == 0)
-
+    return (y % 4 == 0) and (y % 100 != 0 or y % 400 == 0)
 
 def daysInM(m, y):
-    d = [31, 28 + isLeap(y), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31, 30, 31]
-    return d[m - 1]
+    l = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if m == 2 and isLeap(y):
+        return 29
+    return l[m - 1]
 
+def final(dt1, dt2):
+    d1, m1, y1 = dt1
+    d2, m2, y2 = dt2
+    c = 0
+    while y1 < y2 or (y1 == y2 and m1 < m2) or (y1 == y2 and m1 == m2 and d1 < d2):
+        c += 1
+        d1 += 1
+        if d1 > daysInM(m1, y1):
+            d1 = 1
+            m1 += 1
+        if m1 > 12:
+            m1 = 1
+            y1 += 1
+    return c
 
-def daysFrom0(date):
-    d, m, y = date
-    day = d
-    for i in range(1, m):
-        day += daysInM(m, y)
-    day += y * 365 + y // 4 - y // 100 + y // 400
-    return day
-
-
-date1 = (5, 1, 2024)
-date2 = (2, 1, 2024)
-print(abs(daysFrom0(date2) - daysFrom0(date1)))
-y = 2025
+dt1 = (2, 4, 2007)
+dt2 = (20, 2, 2025)
+print(final(dt1, dt2))
