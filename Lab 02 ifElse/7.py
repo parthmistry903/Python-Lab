@@ -1,4 +1,4 @@
-#  Accept a year value from the user. Check whether it is a leap year or not.
+# Accept a year value from the user. Check whether it is a leap year or not.
 def leapYrCheck(y):
     if y % 400 == 0:
         return 1

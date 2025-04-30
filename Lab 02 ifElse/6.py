@@ -1,4 +1,4 @@
-#  Accept a number from the user. And print number of digits in it.
+# Accept a number from the user. And print number of digits in it.
 def digit(a):
     return len(str(abs(a)))
 

@@ -13,7 +13,7 @@ class String:
         return self
     def display(self):
         print(self.value)
-s1 = String("Hello")
+s1 = String("Hello ")
 s2 = String("World")
 s1 += s2
 s1.display()

@@ -1,4 +1,4 @@
-#Convert bytes into KB, MB, and GB.
+# Convert bytes into KB, MB, and GB.
 bytes = float(input("Enter bytes: "))
 kb = bytes / 1024
 mb = kb / 1024

@@ -1,4 +1,6 @@
-# Write a program that merges lines alternatively from two files and writes the results to new file. If one file has less number of lines than the other, the remaining lines from the larger file should be simply copied into the target file.
+# Write a program that merges lines alternatively from two files and writes the results to new file. 
+# If one file has less number of lines than the other, the remaining lines from the larger file should
+#  be simply copied into the target file.
 import os
 import sys
 file1 = input("Enter first file name: ")

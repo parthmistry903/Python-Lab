@@ -1,5 +1,5 @@
-#Multipy 2 Numbers
+# Subtract 2 Numbers
 a=float(input("Enter a number:"))
 b=float(input("Enter another number:"))
-c=a*b
+c=a-b
 print(c)

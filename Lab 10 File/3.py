@@ -2,6 +2,12 @@
 name = input("Enter name: ")
 phone = input("Enter phone number: ")
 email = input("Enter email: ")
-vcard = f"""BEGIN:VCARD {{\n}}VERSION:3.0 {{\n}}FN:{name} {{\n}}TEL:{phone} {{\n}}EMAIL:{email} {{\n}}END:VCARD"""
+
+vcard = f"""BEGIN:VCARD
+FN:{name}
+EMAIL:{email}
+END:VCARD
+"""
+
 with open(f"{name}.vcf", 'w') as f:
     f.write(vcard)

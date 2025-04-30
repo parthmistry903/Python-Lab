@@ -1,4 +1,4 @@
-#Calculate average of three subjects along with their total.
+# Calculate average of three subjects along with their total.
 sub1 = float(input("Enter marks for subject 1: "))
 sub2 = float(input("Enter marks for subject 2: "))
 sub3 = float(input("Enter marks for subject 3: "))

@@ -1,4 +1,4 @@
-#  Check whether a given number is odd or even.
+# Check whether a given number is odd or even.
 def OddEven(a):
     return "Even" if a%2==0 else "Odd"
 

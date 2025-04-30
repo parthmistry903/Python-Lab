@@ -1,4 +1,4 @@
-#Add 2 Numbers
+# Add 2 Numbers
 a=float(input("Enter a number:"))
 b=float(input("Enter another number:"))
 c=a+b
