@@ -7,5 +7,5 @@ def convert(s):
     l = sorted(setW)
     return " ".join(l)
 
-s = "a b a c"
+s = "a b a 123 12 12"
 print(convert(s))
